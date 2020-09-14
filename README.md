@@ -42,7 +42,7 @@ It was difficult to get this project off the ground.
 # TODO:
 
 1. Establish tools: `Typescript`, `linter`, `formatters`
-2. Establish Navigation Library
-3. Break pieces of code into separate directories `components`, `services`, `utils`, `models`, etc.
-4. State management (Redux)
-5. Better UI
+2. Establish Navigation Library: `React Naviation` or `React Native Navigation`
+3. Break pieces of code into separate directories: `components`, `services`, `utils`, `models`, `assets`, etc.
+4. Better state management: `Redux`, `Context`
+5. Better UI tools: `React Native Elements`
