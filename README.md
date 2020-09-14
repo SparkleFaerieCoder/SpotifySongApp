@@ -42,9 +42,9 @@ There were some roadblocks along the way, leading to it taking much longer than 
 Challenges:
 
 1. Personal Macbook and setup of development environment (XCode, Android Studio)
-2. General tooling not setup, linters, formatters, plugins. Prone to unexplainable errors.
+2. General tooling not setup, linters, formatters, plugins. Took time to get everything running to needs.
 3. Determining dependencies.
-4. Documentation took time going through.React Native integration with Spotify. Third party library documentation wasn't up to date, leading to unnecessary instruction and additional errors to solve.
+4. Documentation took time going to figure out React Native integration with Spotify. Third party library documentation wasn't up to date, leading to unnecessary instruction and additional errors to solve.
 
 Learnings:
 
