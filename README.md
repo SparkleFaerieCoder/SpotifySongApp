@@ -35,9 +35,19 @@ npx react-native run-ios
 npx react-native run-android
 ```
 
-# Learnings
+# Difficulties & Learnings
 
-It was difficult to get this project off the ground.
+There were several roadblocks along the way, leading to it taking much longer than I expected:
+
+1. New Macbook and setup of development environment (XCode, Android Studio).
+2. General tooling not setup, linters, formatters, plugins. Prone to unexplainable errors.
+3. A lot of time going through documentation. Documentaton for React Native integration with Spotify. Third party library documentation wasn't up to date, leading to unnecessary instruction and additional errors to solve.
+
+Learnings/Re-learnings:
+
+1. Integration with Spotify (OAuth).
+2. Mocking data/relationships
+3. New tooling and libraries
 
 # TODO:
 
