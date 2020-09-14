@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -20,7 +21,8 @@ import {
 } from 'react-native';
 import {ApiScope, auth as SpotifyAuth} from 'react-native-spotify-remote';
 
-// Api Config object, replace with your own applications client id and urls
+// Api Config object
+// TODO: find a better home
 const spotifyConfig = {
   clientID: '518b92ac0008406caff7b3c2e2520f38',
   redirectURL: 'spotifySongApp://callback',
@@ -45,7 +47,7 @@ const App = () => {
     }
   };
 
-  const fetchList = () => {
+  const fetchList = React.useCallback(() => {
     setLoading(true);
     if (token) {
       const url = 'https://api.spotify.com/v1/me/albums';
@@ -61,21 +63,21 @@ const App = () => {
       fetch(url, options)
         .then((response) => response.json()) // one extra step
         .then((data) => {
-          const albums = data.items.map((item, index) => {
+          const albumsList = data.items.map((item, index) => {
             return {
               id: item.album.id,
               title: item.album.name,
               artists: item.album.artists.map((artist) => artist.name),
             };
           });
-          setAlbums(albums);
+          setAlbums(albumsList);
         })
         .catch((err) => console.log('err', err));
     } else {
       auth();
     }
     setLoading(false);
-  };
+  }, [token]);
 
   const createAlbumNote = (album) => {
     setLoading(true);
@@ -102,15 +104,16 @@ const App = () => {
   };
 
   React.useEffect(() => {
-    console.log('refreash');
-    if (token) fetchList();
-  }, [token]);
+    if (token) {
+      fetchList();
+    }
+  }, [fetchList, token]);
 
   React.useEffect(() => {
     if (selected) {
       refInput.current.focus();
     }
-  }, [selected]);
+  }, [selected, refInput]);
 
   const renderItem = ({item, index}) => {
     const note = notes[item.id]?.value;

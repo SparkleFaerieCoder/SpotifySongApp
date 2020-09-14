@@ -35,24 +35,29 @@ npx react-native run-ios
 npx react-native run-android
 ```
 
-# Difficulties & Learnings
+# Challenges & Learnings
 
-There were several roadblocks along the way, leading to it taking much longer than I expected:
+There were some roadblocks along the way, leading to it taking much longer than I expected:
 
-1. New Macbook and setup of development environment (XCode, Android Studio).
+Challenges:
+
+1. Personal Macbook and setup of development environment (XCode, Android Studio)
 2. General tooling not setup, linters, formatters, plugins. Prone to unexplainable errors.
-3. A lot of time going through documentation. Documentaton for React Native integration with Spotify. Third party library documentation wasn't up to date, leading to unnecessary instruction and additional errors to solve.
+3. Determining dependencies.
+4. Documentation took time going through.React Native integration with Spotify. Third party library documentation wasn't up to date, leading to unnecessary instruction and additional errors to solve.
 
-Learnings/Re-learnings:
+Learnings:
 
-1. Integration with Spotify (OAuth).
-2. Mocking data/relationships
+1. Integration with Spotify (OAuth)
+2. Mocking data/data relationships
 3. New tooling and libraries
 
-# TODO:
+# GOING FORWARD:
 
-1. Establish tools: `Typescript`, `linter`, `formatters`
+1. Establish better tooling: `Typescript`, 'JSX'
 2. Establish Navigation Library: `React Naviation` or `React Native Navigation`
 3. Break pieces of code into separate directories: `components`, `services`, `utils`, `models`, `assets`, etc.
 4. Better state management: `Redux`, `Context`
 5. Better UI tools: `React Native Elements`
+6. Establish better data schemas
+7. Testing: `Jest`, `Unit`, `e2e`
