@@ -54,7 +54,7 @@ Learnings:
 
 # GOING FORWARD:
 
-1. Establish better tooling: `Typescript`, 'JSX'
+1. Establish better tooling: `Typescript`, `JSX`
 2. Establish Navigation Library: `React Naviation` or `React Native Navigation`
 3. Break pieces of code into separate directories: `components`, `services`, `utils`, `models`, `assets`, etc.
 4. Better state management: `Redux`, `Context`
