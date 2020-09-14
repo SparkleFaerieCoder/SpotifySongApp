@@ -47,6 +47,10 @@ Refer to the React Native documentation to get started:
 
 ## Usage
 
+```
+npm install
+```
+
 ### iOS
 
 ```
@@ -76,7 +80,7 @@ Challenges:
 
 Learnings:
 
-1. Integration with Spotify (OAuth)
+1. Spotify integration and current options available for React Native.
 2. Mocking data/data relationships
 3. New tooling and libraries
 
