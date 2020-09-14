@@ -63,7 +63,7 @@ const App = () => {
       fetch(url, options)
         .then((response) => response.json()) // one extra step
         .then((data) => {
-          const albumsList = data.items.map((item, index) => {
+          const albumsList = data.items.map((item) => {
             return {
               id: item.album.id,
               title: item.album.name,
@@ -115,7 +115,7 @@ const App = () => {
     }
   }, [selected, refInput]);
 
-  const renderItem = ({item, index}) => {
+  const renderItem = ({item}) => {
     const note = notes[item.id]?.value;
     return (
       <TouchableOpacity
