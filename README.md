@@ -17,6 +17,34 @@ You will need Node, Watchman, the React Native command line interface, Xcode and
 Refer to the React Native documentation to get started:
 [React Native Getting Started](https://reactnative.dev/docs/environment-setup)
 
+## This project was built with the following dependencies:
+
+- **System**:
+  OS: macOS 10.15.6
+- **Binaries**:
+  Node: 12.16.1
+  npm: 6.13.4
+  Watchman: 4.9.0
+- **Managers**:
+  CocoaPods: 1.9.3
+- **SDKs**:
+  iOS SDK:
+  Platforms: iOS 13.7
+  Android SDK:
+  API Levels: 26, 29, 30
+  Build Tools: 28.0.3, 29.0.2, 30.0.2
+- **IDEs**:
+  Android Studio: 4.0
+  Xcode: 11.7
+- **Languages**:
+  Java: 1.8.0_265
+  Python: 2.7.16
+- **npmPackages**:
+  react: 16.13.1 => 16.13.1
+  react-native: 0.63.2 => 0.63.2
+
+* **Note**: As explained in the React Native documentation, unexpected issues could arise if you previously installed a global react-native-cli package\_
+
 ## Usage
 
 ### iOS
@@ -43,7 +71,7 @@ Challenges:
 
 1. Personal Macbook and setup of development environment (XCode, Android Studio)
 2. General tooling not setup, linters, formatters, plugins. Took time to get everything running to needs.
-3. Determining dependencies.
+3. Determining dependencies, library and Spotify for authentication.
 4. Documentation took time going to figure out React Native integration with Spotify. Third party library documentation wasn't up to date, leading to unnecessary instruction and additional errors to solve.
 
 Learnings:
