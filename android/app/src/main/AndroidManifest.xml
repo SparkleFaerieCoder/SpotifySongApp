@@ -33,9 +33,12 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
 
-                <data
+                <!-- <data
                     android:scheme="spotifysongapp"
-                    android:host="spotifysongapp://callback"/>
+                    android:host="spotifysongapp://callback"/> -->
+                     <data
+                    android:scheme="spotifysongapp"
+                    android:host="@string/SPOTIFY_CALLBACK"/>
             </intent-filter>
         </activity>
 

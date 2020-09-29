@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "list": "emulator -list-avds",
+    "launch": "emulator -avd"
   },
   "dependencies": {
     "react": "16.13.1",
@@ -23,6 +25,7 @@
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react-native-config": "^1.3.3",
     "react-test-renderer": "16.13.1"
   },
   "jest": {

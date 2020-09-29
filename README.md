@@ -4,7 +4,7 @@ A React Native app to get your list of albums from Spotify and leave notes about
 
 The app does the following:
 
-1.  Authenticate with the chosen API. For quick turn around for this proof of concept(POC), the app utilizes [Spotify App Remote](https://cjam.github.io/react-native-spotify-remote/index.html) for authentication. This third party library provided minimal alterations to native files, resulting in quicker turn around to develop POC. Going forward, this library could support session management and playback. Alternatively, the native Spotify SDK could be explored to handle app autonomy and handling complex features requirements.
+1.  The app utilizes [Spotify App Remote](https://cjam.github.io/react-native-spotify-remote/index.html) for authentication. This third party library provided minimal alterations to native files, resulting in quicker turn around to develop POC. Going forward, this library could support session management and playback. Alternatively, the native Spotify SDK could be explored to handle app autonomy and handling complex features requirements.
 
 2.  Once authenticated with your Spotify account, the app will pull a list of your albums and display them in a list view.
 
@@ -44,6 +44,10 @@ Refer to the React Native documentation to get started:
   react-native: 0.63.2 => 0.63.2
 
 * **Note**: As explained in the React Native documentation, unexpected issues could arise if you previously installed a global react-native-cli package\_
+
+### Spotify
+
+In order for the app to fetch data from Spotify, you need to authorize your application by [Registering Your App](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) and obtaining the Client ID and established callback.
 
 ## Usage
 

@@ -19,15 +19,18 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
+import Config from 'react-native-config';
 import {ApiScope, auth as SpotifyAuth} from 'react-native-spotify-remote';
 
 // Api Config object
 // TODO: find a better home
 const spotifyConfig = {
-  clientID: '518b92ac0008406caff7b3c2e2520f38',
-  redirectURL: 'spotifySongApp://callback',
+  clientID: Config.SPOTIFY_API_KEY,
+  redirectURL: Config.SPOTIFY_CALLBACK,
   scopes: [ApiScope.UserLibraryReadScope],
 };
+
+console.log(Config.SPOTIFY_API_KEY, Config.SPOTIFY_CALLBACK);
 
 const App = () => {
   const [token, setToken] = React.useState(undefined);
