@@ -45,9 +45,9 @@ Refer to the React Native documentation to get started:
 
 * **Note**: As explained in the React Native documentation, unexpected issues could arise if you previously installed a global react-native-cli package\_
 
-### Spotify
+## Integration with Spotify
 
-In order for the app to fetch data from Spotify, you need to authorize your application by [Registering Your App](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) and obtaining the Client ID and established callback.
+In order for the app to fetch data from Spotify, you need to authorize your application by [registering your app](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) and store the Client ID and callback within a `.env` file. Refer to the template `.env_sample` file.
 
 ## Usage
 
