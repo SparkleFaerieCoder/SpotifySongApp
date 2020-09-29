@@ -1,12 +1,4 @@
 /* eslint-disable react-native/no-inline-styles */
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
   Button,
@@ -23,14 +15,11 @@ import Config from 'react-native-config';
 import {ApiScope, auth as SpotifyAuth} from 'react-native-spotify-remote';
 
 // Api Config object
-// TODO: find a better home
 const spotifyConfig = {
   clientID: Config.SPOTIFY_API_KEY,
   redirectURL: Config.SPOTIFY_CALLBACK,
   scopes: [ApiScope.UserLibraryReadScope],
 };
-
-console.log(Config.SPOTIFY_API_KEY, Config.SPOTIFY_CALLBACK);
 
 const App = () => {
   const [token, setToken] = React.useState(undefined);
