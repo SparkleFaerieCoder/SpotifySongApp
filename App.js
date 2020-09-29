@@ -14,7 +14,6 @@ import {
 import Config from 'react-native-config';
 import {ApiScope, auth as SpotifyAuth} from 'react-native-spotify-remote';
 
-// Api Config object
 const spotifyConfig = {
   clientID: Config.SPOTIFY_API_KEY,
   redirectURL: Config.SPOTIFY_CALLBACK,
